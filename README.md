@@ -1,7 +1,12 @@
 # Fast_Portrait_Segmentation
 Fast (aimed to "real time") Portrait Segmentation at mobile phone
 
-This project focus on real-time protrait segmentation, I hope to find a effcient network which can run on mobile phone. All the experimentals works with pytorch.
+This project is not normal semantic segmentation but focus on real-time protrait segmentation, I hope to find a effcient network which can run on mobile phone. All the experimentals works with pytorch.
+
+
+# models
+TODO
+
 
 # References
 ## papers
