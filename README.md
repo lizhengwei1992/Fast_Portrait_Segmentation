@@ -1,7 +1,7 @@
 # Fast_Portrait_Segmentation
 Fast (aimed to "real time") Portrait Segmentation at mobile phone
 
-This project is not normal semantic segmentation but focus on real-time protrait segmentation, I hope to find a effcient network which can run on mobile phone. All the experimentals works with pytorch.
+This project is not normal semantic segmentation but focus on **real-time protrait segmentation**, I hope to find a effcient network which can run on **mobile phone**. All the experimentals works with **pytorch**.
 
 
 # models
@@ -29,4 +29,6 @@ TODO
 - [] [ICNet for Real-Time Semantic Segmentation on High-Resolution Image](https://arxiv.org/pdf/1704.08545.pdf)
 - [] [ShuffleSeg: Real-time Semantic Segmentation Network](https://arxiv.org/pdf/1803.03816.pdf)
 - [] [ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation](https://arxiv.org/pdf/1803.06815.pdf)
+- [] [Efficient Semantic Segmentation using Gradual Grouping](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Vallurupalli_Efficient_Semantic_Segmentation_CVPR_2018_paper.pdf)
+
 
