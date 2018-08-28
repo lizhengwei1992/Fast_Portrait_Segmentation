@@ -5,7 +5,20 @@ This project is not normal semantic segmentation but focus on **real-time protra
 
 
 # models
-TODO
+
+- ## [mobilenet_dilate_unet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/mv2_dilate_unet.py) 
+
+    Encoder: mobilenet(os: 32) 
+    
+    Decoder: unet(concat low lwvel feature)
+             use dilate convolution at different stage(d = 2, 6, 12, 18)
+
+
+
+
+
+
+
 
 
 # References
