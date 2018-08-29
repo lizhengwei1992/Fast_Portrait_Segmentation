@@ -3,12 +3,11 @@
 	ShuffleSeg
 
 Author: Zhengwei Li
-Data: July 25 2018
+Data: July 30 2018
 '''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
 from collections import OrderedDict
 from torch.nn import init
 
@@ -270,42 +269,30 @@ class ShuffleNet(nn.Module):
 
         return s0, s1, s2, s3, s4
 
-class ShuffleSegNet(nn.Module):
+class Shuffle_Seg_SkipNet(nn.Module):
 
     def __init__(self, groups=3, in_channels=3, n_classes=1):
-        """ShuffleNet constructor.
-
-        Arguments:
-            groups (int, optional): number of groups to be used in grouped 
-                1x1 convolutions in each ShuffleUnit. Default is 3 for best
-                performance according to original paper.
-            in_channels (int, optional): number of channels in the input tensor.
-                Default is 3 for RGB image inputs.
-            num_classes (int, optional): number of classes to predict. Default
-                is 1000 for ImageNet.
-
+        """Shuffle_Seg_SkipNet constructor.
         """
-        super(ShuffleSegNet, self).__init__()
+        super(Shuffle_Seg_SkipNet, self).__init__()
 
         self.encoder = ShuffleNet(groups=groups, in_channels=in_channels)
 
         self.scorelayer = conv1x1(960, 1, bias=True)
 
         self.bn_ = nn.BatchNorm2d(1)
-        self.up1 = BilinearConvTranspose2d(1, stride=2)
-        self.stage3_down = conv1x1(480, 1)
-        self.up2 = BilinearConvTranspose2d(1, stride=2)
-        self.stage2_down = conv1x1(240, 1)
-        self.up3 = BilinearConvTranspose2d(1, stride=2)
-        self.stage1_down = conv1x1(24, 1)
-        self.up4 = BilinearConvTranspose2d(1, stride=2)
-        self.stage0_down = conv1x1(24, 1)
+        self.up1 = BilinearConvTranspose2d(1, stride=2, groups=1)
+        self.stage3_down = conv1x1(480, 1, groups=1, bias=False)
+        self.up2 = BilinearConvTranspose2d(1, stride=2, groups=1)
+        self.stage2_down = conv1x1(240, 1, groups=1, bias=False)
+        self.up3 = BilinearConvTranspose2d(1, stride=2, groups=1)
+        self.stage1_down = conv1x1(24, 1, groups=1, bias=False)
+        self.up4 = BilinearConvTranspose2d(1, stride=2, groups=1)
+        self.stage0_down = conv1x1(24, 1, groups=1, bias=False)
 
-        self.deconv = BilinearConvTranspose2d(1, stride=2)
+        self.deconv = BilinearConvTranspose2d(1, stride=2, groups=1)
         
-
         self.init_params()
-
 
     def init_params(self):
         for m in self.modules():
@@ -320,40 +307,6 @@ class ShuffleSegNet(nn.Module):
                 init.normal_(m.weight, std=0.001)
                 if m.bias is not None:
                     init.constant_(m.bias, 0)
-
-
-    def _make_stage(self, stage):
-        modules = OrderedDict()
-        stage_name = "ShuffleUnit_Stage{}".format(stage)
-        
-        # First ShuffleUnit in the stage
-        # 1. non-grouped 1x1 convolution (i.e. pointwise convolution)
-        #   is used in Stage 2. Group convolutions used everywhere else.
-        grouped_conv = stage > 2
-        
-        # 2. concatenation unit is always used.
-        first_module = ShuffleUnit(
-            self.stage_out_channels[stage-1],
-            self.stage_out_channels[stage],
-            groups=self.groups,
-            grouped_conv=grouped_conv,
-            combine='concat'
-            )
-        modules[stage_name+"_0"] = first_module
-
-        # add more ShuffleUnits depending on pre-defined number of repeats
-        for i in range(self.stage_repeats[stage-2]):
-            name = stage_name + "_{}".format(i+1)
-            module = ShuffleUnit(
-                self.stage_out_channels[stage],
-                self.stage_out_channels[stage],
-                groups=self.groups,
-                grouped_conv=True,
-                combine='add'
-                )
-            modules[name] = module
-
-        return nn.Sequential(modules)
 
 
     def forward(self, x):
@@ -375,11 +328,11 @@ class ShuffleSegNet(nn.Module):
         heat_map = self.bn_(self.up3(heat_map))
         s1_heat_map = self.bn_(self.stage1_down(s1))
         heat_map = heat_map + s1_heat_map
-        
+
         heat_map = self.bn_(self.up4(heat_map))
         s0_heat_map = self.bn_(self.stage0_down(s0))
         heat_map = heat_map + s0_heat_map
-        
+
         heat_map = self.deconv(heat_map)
 
         return heat_map
