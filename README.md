@@ -19,8 +19,7 @@ This project is not normal semantic segmentation but focus on **real-time protra
     
     Decoder : skip connection (add low level feature)
     
-
-
+- ## [esp_dense_seg](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/esp_dense_seg.py)<sup>[20][10][15][19]</sup>
 
 
 
