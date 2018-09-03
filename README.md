@@ -8,12 +8,15 @@ This project is not normal semantic segmentation but focus on **real-time protra
 
 - ## [mobilenet_dilate_unet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/mv2_dilate_unet.py) 
 
-    Encoder: mobilenet(os: 32) 
+    Encoder : mobilenet(os: 32) 
     
-    Decoder: unet(concat low lwvel feature)
+    Decoder : unet(concat low level feature)
              use dilate convolution at different stage(d = 2, 6, 12, 18)
 
+- ## [Shuffle_Seg_SkipNet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/shuffle_seg_skipnet.py)
 
+    Encoder : shufflenet
+    Decoder : skip connection (add low level feature)
 
 
 
@@ -23,26 +26,25 @@ This project is not normal semantic segmentation but focus on **real-time protra
 
 # References
 ## papers
-- [] [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/pdf/1704.04861.pdf)
-- [] [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/pdf/1801.04381.pdf)
-- [] [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](https://arxiv.org/pdf/1707.01083.pdf)
-- [] [ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf)
-- [] [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://arxiv.org/pdf/1711.09224.pdf)
-- [] [Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/pdf/1610.02357.pdf)
-- [] [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
-- [] [SkipNet: Learning Dynamic Routing in Convolutional Networks](https://arxiv.org/pdf/1711.09485.pdf)
-- [] [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/pdf/1706.05587.pdf)
-- [] [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://arxiv.org/pdf/1802.02611.pdf)
-- [] [Automatic Portrait Segmentation for Image Stylization](http://xiaoyongshen.me/webpage_portrait/papers/portrait_eg16.pdf)
-- [] [Fast Deep Matting for Portrait Animation on Mobile Phone](https://arxiv.org/pdf/1707.08289.pdf)
-- [] [DenseASPP for Semantic Segmentation in Street Scenes](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.pdf)
-- [] [Learning a Discriminative Feature Network for Semantic Segmentation](https://arxiv.org/pdf/1804.09337.pdf)
-- [] [ERFNet: Efficient Residual Factorized ConvNet for Real-time Semantic Segmentation](http://www.robesafe.es/personal/eduardo.romera/pdfs/Romera17tits.pdf)
-- [] [ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation](https://arxiv.org/pdf/1606.02147.pdf)
-- [] [SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation](https://arxiv.org/pdf/1511.00561.pdf)
-- [] [ICNet for Real-Time Semantic Segmentation on High-Resolution Image](https://arxiv.org/pdf/1704.08545.pdf)
-- [] [ShuffleSeg: Real-time Semantic Segmentation Network](https://arxiv.org/pdf/1803.03816.pdf)
-- [] [ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation](https://arxiv.org/pdf/1803.06815.pdf)
-- [] [Efficient Semantic Segmentation using Gradual Grouping](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Vallurupalli_Efficient_Semantic_Segmentation_CVPR_2018_paper.pdf)
-- [] [Analysis of efficient CNN design techniques for semantic segmentation](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Briot_Analysis_of_Efficient_CVPR_2018_paper.pdf)
+- [1]  [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/pdf/1704.04861.pdf)
+- [2]  [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/pdf/1801.04381.pdf)
+- [3]  [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](https://arxiv.org/pdf/1707.01083.pdf)
+- [4]  [ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf)
+- [5]  [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://arxiv.org/pdf/1711.09224.pdf)
+- [6]  [Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/pdf/1610.02357.pdf)
+- [7]  [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
+- [8]  [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/pdf/1706.05587.pdf)
+- [9]  [Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://arxiv.org/pdf/1802.02611.pdf)
+- [10] [Automatic Portrait Segmentation for Image Stylization](http://xiaoyongshen.me/webpage_portrait/papers/portrait_eg16.pdf)
+- [11] [Fast Deep Matting for Portrait Animation on Mobile Phone](https://arxiv.org/pdf/1707.08289.pdf)
+- [12] [DenseASPP for Semantic Segmentation in Street Scenes](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.pdf)
+- [13] [Learning a Discriminative Feature Network for Semantic Segmentation](https://arxiv.org/pdf/1804.09337.pdf)
+- [14] [ERFNet: Efficient Residual Factorized ConvNet for Real-time Semantic Segmentation](http://www.robesafe.es/personal/eduardo.romera/pdfs/Romera17tits.pdf)
+- [15] [ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation](https://arxiv.org/pdf/1606.02147.pdf)
+- [16] [SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation](https://arxiv.org/pdf/1511.00561.pdf)
+- [17] [ICNet for Real-Time Semantic Segmentation on High-Resolution Image](https://arxiv.org/pdf/1704.08545.pdf)
+- [18] [ShuffleSeg: Real-time Semantic Segmentation Network](https://arxiv.org/pdf/1803.03816.pdf)
+- [19] [ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation](https://arxiv.org/pdf/1803.06815.pdf)
+- [20] [Efficient Semantic Segmentation using Gradual Grouping](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Vallurupalli_Efficient_Semantic_Segmentation_CVPR_2018_paper.pdf)
+- [21] [Analysis of efficient CNN design techniques for semantic segmentation](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Briot_Analysis_of_Efficient_CVPR_2018_paper.pdf)
 
