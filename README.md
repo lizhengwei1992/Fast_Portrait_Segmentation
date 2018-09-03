@@ -6,17 +6,19 @@ This project is not normal semantic segmentation but focus on **real-time protra
 
 # models
 
-- ## [mobilenet_dilate_unet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/mv2_dilate_unet.py) 
+- ## [mobilenet_dilate_unet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/mv2_dilate_unet.py)<sup>[1][2][7][9]</sup>
 
-    Encoder : mobilenet(os: 32) 
+    Encoder : mobilenet_v2(os: 32) 
     
     Decoder : unet(concat low level feature)
              use dilate convolution at different stage(d = 2, 6, 12, 18)
-
-- ## [Shuffle_Seg_SkipNet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/shuffle_seg_skipnet.py)
+             
+- ## [Shuffle_Seg_SkipNet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/shuffle_seg_skipnet.py)<sup>[4][18]</sup>
 
     Encoder : shufflenet
+    
     Decoder : skip connection (add low level feature)
+    
 
 
 
