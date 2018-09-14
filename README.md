@@ -49,4 +49,5 @@ This project is not normal semantic segmentation but focus on **real-time protra
 - [20] [ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation](https://arxiv.org/pdf/1803.06815.pdf)
 - [21] [Efficient Semantic Segmentation using Gradual Grouping](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Vallurupalli_Efficient_Semantic_Segmentation_CVPR_2018_paper.pdf)
 - [22] [Analysis of efficient CNN design techniques for semantic segmentation](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Briot_Analysis_of_Efficient_CVPR_2018_paper.pdf)
-- [13] [Dual Attention Network for Scene Segmentation](https://arxiv.org/pdf/1809.02983.pdf)
+- [23] [Dual Attention Network for Scene Segmentation](https://arxiv.org/pdf/1809.02983.pdf)
+- [24] [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/pdf/1808.00897.pdf)
