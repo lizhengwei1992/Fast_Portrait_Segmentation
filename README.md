@@ -1,10 +1,11 @@
 # Fast_Portrait_Segmentation
 Fast (aimed to "real time") Portrait Segmentation at mobile phone
 
-This project is not normal semantic segmentation but focus on **real-time protrait segmentation**, I hope to find a effcient network which can run on **mobile phone**. All the experimentals works with **pytorch**.
+This project is not normal semantic segmentation but focus on **real-time protrait segmentation**, I hope to find a effcient network which can run on **mobile phone**. Currently, successfull application of person body/protrait segmentation can be find in APP like **SNOW**&**B612**, whose technology is proposed by a Korea company [Nalbi](https://www.nalbi.ai/).
+All the experimentals works with **pytorch**.
 
 
-# models
+# Models
 
 - ## [mobilenet_dilate_unet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/mv2_dilate_unet.py)<sup>[1][2][7][9]</sup>
 
@@ -26,6 +27,16 @@ This project is not normal semantic segmentation but focus on **real-time protra
 
     Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSenet). 
 
+
+# Speed Analysis(device: cpu(i7))
+     
+TODO
+
+
+
+# Result Examples
+
+TODO
 
 
 
