@@ -1,8 +1,10 @@
 # Fast_Portrait_Segmentation
 Fast (aimed to "real time") Portrait Segmentation at mobile phone
 
-This project is not normal semantic segmentation but focus on **real-time protrait segmentation**, I hope to find a effcient network which can run on **mobile phone**. Currently, successfull application of person body/protrait segmentation can be find in APP like **SNOW**&**B612**, whose technology is proposed by a Korea company [Nalbi](https://www.nalbi.ai/).
-All the experimentals works with **pytorch**.
+This project is not normal semantic segmentation but focus on **real-time protrait segmentation**.All the experimentals works with **pytorch**.
+
+
+I hope to find a effcient network which can run on **mobile phone**. Currently, successfull application of person body/protrait segmentation can be find in APP like **SNOW**&**B612**, whose technology is proposed by a Korea company [Nalbi](https://www.nalbi.ai/).
 
 
 # Models
