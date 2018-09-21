@@ -30,7 +30,7 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
     Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSenet). 
 
 
-# Speed Analysis(device: cpu(i7))
+# Speed Analysis()
      
 TODO
 
