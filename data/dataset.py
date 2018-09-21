@@ -46,8 +46,7 @@ class coco(data.Dataset):
         _img = (_img - (104., 112., 121.,)) / 255.0
         _target = cv2.imread(os.path.join(self._label_dir, self.lal_List[index])).astype(np.float32) #(0,1)
 
-        _img = cv2.resize(_img, (INPUT_SIZE,INPUT_SIZE), interpolation=cv2.INTER_CUBIC)
-        _target = cv2.resize(_target, (INPUT_SIZE,INPUT_SIZE), interpolation=cv2.INTER_NEAREST)
+        _img, _target = data_config.crop_patch(_img, _target, INPUT_SIZE)
 
         _img, _target = data_config.augment(_img, _target)
 
