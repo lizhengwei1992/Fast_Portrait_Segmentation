@@ -27,10 +27,10 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
 - ## [residualdense_bisenet](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/blob/master/models/residualdense_bisenet.py)<sup>[15][23][24]</sup>
 
-    Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSenet). 
+    Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation). 
 
 
-# Speed Analysis()
+# Speed Analysis
      
 TODO
 
