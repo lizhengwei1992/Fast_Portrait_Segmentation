@@ -31,14 +31,19 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
 
 # Speed Analysis
-     
 TODO
+MacBook Air (13-inch, Early 2015)
+systerm : MacOS   
+cpu     : 1.6 GHz Intel Core i5
 
-
+|            | model size (M) | time(ms)      |result         |
+| ---------- | :-----------:  | :-----------: | :-----------: |
+| model_1    |                |               |               |
+| model_2    |                |               |               |
 
 # Result Examples
 
-<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/portrait.gif" width="300" height="200" alt="portrait"/>
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/portrait.gif" width="300" height="200" >
 
 
 
