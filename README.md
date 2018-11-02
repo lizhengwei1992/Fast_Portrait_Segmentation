@@ -38,7 +38,8 @@ TODO
 
 # Result Examples
 
-TODO
+![image](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/tree/master/result/1_seg.gif)
+
 
 
 
