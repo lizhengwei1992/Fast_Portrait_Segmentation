@@ -38,7 +38,7 @@ TODO
 
 # Result Examples
 
-![image](https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/portrait.gif)
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/portrait.gif" width="300" height="200" alt="portrait"/>
 
 
 
