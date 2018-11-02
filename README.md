@@ -29,6 +29,11 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
     Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation). 
 
+- ## Segentation + Matting
+
+
+
+
 
 # Speed Analysis
 
@@ -44,7 +49,7 @@ TODO
 
 # Result Examples
 
-HUAWEI Mate 20 can keep color on portrait and make the bacgrand gray in real time ([click to view](https://www.bilibili.com/video/av34321080/?spm_id_from=333.788.videocard.1) ). I test my model using cpu on my MAC, getting some videos here.
+HUAWEI Mate 20 released recently can keep color on human and make the bacgrand gray in real time ([click to view](https://www.bilibili.com/video/av34321080/?spm_id_from=333.788.videocard.1) ). I test my model using cpu on my MAC, getting some videos here.
 
 <img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/1.gif" width="480" height="270" >
 <img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/2.gif" width="480" height="270" >
