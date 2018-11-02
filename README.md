@@ -31,17 +31,20 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
 
 # Speed Analysis
-TODO
-MacBook Air (13-inch, Early 2015)
-systerm : MacOS   
-cpu     : 1.6 GHz Intel Core i5
 
-|            | model size (M) | time(ms)      |result         |
-| ---------- | :-----------:  | :-----------: | :-----------: |
-| model_1    |                |               |               |
-| model_2    |                |               |               |
+TODO
+
+
+
+
+|            | model size (M) | time(ms)      | 
+| ---------- | :-----------:  | :-----------: |
+| model_1    |                |               |
+| model_2    |                |               |
 
 # Result Examples
+
+HUAWEI Mate 20 can keep color on portrait and make the bacgrand gray in real time ([click to view](https://www.bilibili.com/video/av34321080/?spm_id_from=333.788.videocard.1) ). I test my model using cpu on my MAC, getting some videos here.
 
 <img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/1.gif" width="480" height="270" >
 <img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/2.gif" width="480" height="270" >
