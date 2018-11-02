@@ -43,7 +43,13 @@ cpu     : 1.6 GHz Intel Core i5
 
 # Result Examples
 
-<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/portrait.gif" width="300" height="200" >
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/1.gif" width="480" height="270" >
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/2.gif" width="480" height="270" >
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/3.gif" width="480" height="270" >
+<img src="https://github.com/lizhengwei1992/Fast_Portrait_Segmentation/raw/master/result/4.gif" width="480" height="270" >
+
+
+
 
 
 
