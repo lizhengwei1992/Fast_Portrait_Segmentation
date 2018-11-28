@@ -29,23 +29,25 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
     Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation). 
 
-- ## Segentation + Matting
+- ## Segentation + Matting <sup>[7][12][15]</sup>
+    Hard segmentation + Soft matting.(coming soon)
 
 
 
 
 
 # Speed Analysis
+:zap: *Real-time ! ! ! ** :tada::tada::tada:
 
-TODO
+Platform    : [ncnn](https://github.com/Tencent/ncnn).
 
-
+Mobile phone: Samsung Galaxy S8+(cpu).
 
 
 |            | model size (M) | time(ms)      | 
 | ---------- | :-----------:  | :-----------: |
-| model_1    |                |               |
-| model_2    |                |               |
+| model_seg_matting    |          3.3     |     ~40          |
+
 
 # Result Examples
 
