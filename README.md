@@ -37,7 +37,7 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
 
 # Speed Analysis
-:zap: *Real-time ! ! ! ** :tada::tada::tada:
+:zap: **Real-time ! ! ! ** :tada::tada::tada:
 
 Platform    : [ncnn](https://github.com/Tencent/ncnn).
 
