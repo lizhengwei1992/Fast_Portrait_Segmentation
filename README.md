@@ -29,7 +29,7 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 
     Attention model is a potential module in the segmentation task. I use a very light residual-dense net as the backbone of the Context Path. The details about fussion of last features in Contxt Path is not clear in the paper(BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation). 
 
-- ## Segentation + Matting <sup>[7][12][15]</sup>
+- ## Segmentation + Matting <sup>[7][12][15]</sup>
     Hard segmentation + Soft matting.(coming soon)
 
 
@@ -91,3 +91,4 @@ HUAWEI Mate 20 released recently can keep color on human and make the bacgrand g
 - [22] [Analysis of efficient CNN design techniques for semantic segmentation](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w12/Briot_Analysis_of_Efficient_CVPR_2018_paper.pdf)
 - [23] [Dual Attention Network for Scene Segmentation](https://arxiv.org/pdf/1809.02983.pdf)
 - [24] [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/pdf/1808.00897.pdf)
+- [25] [CCNet: Criss-Cross Attention for Semantic Segmentation](https://arxiv.org/pdf/1811.11721.pdf)
