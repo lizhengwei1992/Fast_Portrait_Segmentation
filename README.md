@@ -48,6 +48,8 @@ Mobile phone: Samsung Galaxy S8+(cpu).
 | ---------- | :-----------:  | :-----------: |
 | model_seg_matting    |          3.3     |     ~40          |
 
+***update : 2018/12/27***: Demo video on my iphone 6 ([baiduyun](https://pan.baidu.com/s/1nieS7dSMw6Kwzsa1dz4egA))
+
 
 # Result Examples
 
