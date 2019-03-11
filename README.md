@@ -94,3 +94,4 @@ HUAWEI Mate 20 released recently can keep color on human and make the bacgrand g
 - [23] [Dual Attention Network for Scene Segmentation](https://arxiv.org/pdf/1809.02983.pdf)
 - [24] [BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation](https://arxiv.org/pdf/1808.00897.pdf)
 - [25] [CCNet: Criss-Cross Attention for Semantic Segmentation](https://arxiv.org/pdf/1811.11721.pdf)
+- [26] [ESPNetv2: A Light-weight, Power Efficient, and General Purpose Convolutional Neural Network](https://arxiv.org/pdf/1811.11431.pdf)
