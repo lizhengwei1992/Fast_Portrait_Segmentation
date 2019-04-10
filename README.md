@@ -32,7 +32,7 @@ I hope to find a effcient network which can run on **mobile phone**. Currently, 
 - ## Segmentation + Matting <sup>[7][12][15]</sup>
     Hard segmentation + Soft matting.(coming soon)
 
-
+# update 2019/04/10: The code and pre_trained model of final version of the portrait_segmentation is released ! ! ! [mobile_phone_human_matting](https://github.com/lizhengwei1992/mobile_phone_human_matting)
 
 
 
